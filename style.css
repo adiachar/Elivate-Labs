@@ -42,26 +42,19 @@ main {
     background: linear-gradient(190deg, rgb(0, 0, 0) 20%, rgb(201, 0, 201), rgb(80, 80, 255));
 }
 
-.loading {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    border-top: 5px solid white;
-    animation-name: loading;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+.hero {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes loading {
-    50% {
-        transform: rotate(90deg);
-    }
+.hero h1 {
+    font-size: 7rem;
+}
 
-    100% {
-        transform: rotate(360deg);
-    }
+.hero p {
+    font-size: 2%;
 }
 
 footer {
@@ -84,4 +77,17 @@ footer {
     font-size: 1.8rem;
     font-weight: 900;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px){
+    .hero {
+        padding: 1rem;
+    }
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
 }

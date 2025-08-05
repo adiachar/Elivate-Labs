@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoApp {
+    max-width: 90vw;
+    padding: 2rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todoApp h1 {
+    text-align: center;
+}
+
+.input {
+    padding: 1rem;
+    display: flex;
+}
+
+.input input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+button {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo {
+    max-width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow-x: auto;
+}
+
+.todo p{
+    margin: 0 1rem;
+    display: inline;
+}
+
+#addBtn {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: green;
+}
+
+#dltBtn {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: red;
+}
+
+#cmpBtn {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(40, 40, 255);
+}

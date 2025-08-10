@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Responsive Website</h1>
+    <button class="nav-toggle">☰ Menu</button>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="column">
+      <h2>Welcome</h2>
+      <p>This is a sample responsive layout using media queries.</p>
+      <img src="https://via.placeholder.com/600x300" alt="Sample Image" />
+    </section>
+    <section class="column">
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive layout</li>
+        <li>Mobile-friendly navigation</li>
+        <li>Scalable images</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Adithya's Web Studio</p>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

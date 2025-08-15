@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Page</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Minor tweaks for card images */
+        .blog-card-img {
+            height: 180px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <!-- Responsive navbar with brand and navigation links -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Cards Section -->
+    <!-- Container with responsive grid of blog post cards -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Blog Post Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-card-img" alt="Blog Image 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Exploring the Mountains</h5>
+                        <p class="card-text">Discover the beauty and adventure of mountain hiking in this inspiring travel blog post.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-card-img" alt="Blog Image 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">City Lights & Nights</h5>
+                        <p class="card-text">Experience the vibrant nightlife and culture of the city through our latest blog entry.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-card-img" alt="Blog Image 3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Culinary Journeys</h5>
+                        <p class="card-text">Join us as we explore delicious cuisines and share recipes from around the world.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- Footer with social media icons -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+            </div>
+            <div>
+                &copy; 2025 MyBlog. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
